@@ -1,11 +1,13 @@
 AdColony SDK 3 Unity Plugin
 ============================================
-* Modified: November 4, 2016
-* Unity Plug-in Version: 3.0.0
-* iOS SDK Version: 3.0.4.1
-* Android SDK Version: 3.0.4
+Modified: November 4, 2016
+Unity Plug-in Version: 3.0.0
+iOS SDK Version: 3.0.4.1
+Android SDK Version: 3.0.4
 
-Please Review the [Change log](CHANGELOG.md)
+SDK Information
+---------------------------------------
+For detailed information about the AdColony SDK, review our [iOS documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) and [Android documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
 Download:
 ---------------------------------------
@@ -13,35 +15,27 @@ The simplest way to obtain the AdColony SDK 3 Unity Plugin is to click the "Clon
 
 Contains:
 ---------------------------------------
-* AdColony.unitypackage - A Unity assets package containing the AdColony plugin.
+* AdColony.unitypackage
 * Unity Sample App
 
 Getting Started with AdColony Unity:
 ---------------------------------------
-First time users should review the [quick start guide](https://github.com/AdColony/AAdColony-Unity-SDK-3/wiki).
+This Unity plugin integrates our Aurora SDK into a package that can be included in Unity 3D applications, and includes the latest versions of both our iOS and Android Aurora SDKs.
 
-How to Set Up the ADCUnity Sample App:
---------------------------------------
-1) Open the sample app (ADCUnity) in Unity:
-    Go to ADCUnitySample/Assets/Scenes and open Main.unity. This should cause Unity to open the sample app.
+*All* users should review our [documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki).
 
-2) Add the AdColony plugin package.
-    In the Unity menu, go to Assets->Import Package->Custom Package, then find and open AdColonyUnityPlugin/AdColony.unitypackage. 
+3.0.0 Change Log:
+----------------------------------
+* Initial upload of the Unity plugin and sample app.
 
-How to Build the Sample App for iOS:
---------------------------------------
-1) In Unity, go to "File->Build Settings". This brings up the build dialog. Under Platforms, select iOS. Then select whether you want a Debug or Release build (Release is the default).
+Legal Requirements:
+----------------------------------
+By downloading the AdColony SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with AdColony and accept the terms and conditions on the AdColony website.
 
-2) Then click the "Build" button, and select where to create the XCode iOS project.
+Note that U.S. based companies will need to complete the W-9 form and send it to us before publisher payments can be issued.
 
-3) Open the generated project in XCode.
 
-4) Set up code signing.
+Contact Us:
+----------------------------------
+For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
 
-5) Build to a device (running in the Simulator is not recommended).
-
-How to Build the Sample App for Android:
---------------------------------------
-1) In Unity, go to "File->Build Settings". This brings up the build dialog.  Under Platforms, select Android.
-
-2) Click the "Build & Run" button, and select where to store the generated file. After creating the file, it should automatically install and run the app onto a connected Android device if one is attached.
