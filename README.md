@@ -22,7 +22,10 @@ Our Aurora SDK contains huge leaps forward in our capabilities, with benefits fo
 
 Please note that updating from our 2.x Unity Plugin is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x Unity Plugin, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
-Please also feel free to explore the [Compass Platform](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki/Compass-Overview). For more details on how you can take advantage of Compass, please [click here.](https://clients.adcolony.com/compass/info)
+AdColony Compass™ provides the tools to increase user engagement through targeted user communications, achievements and rewards. Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps.Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
+
+To start using Compass™ today, follow this [link.](https://clients.adcolony.com/compass/info)
+Questions?  E-mail us at support@adcolony.com
 
 For detailed information about the AdColony Aurora SDK, review our [iOS documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) and [Android documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
@@ -42,4 +45,3 @@ Note that U.S. based companies will need to complete the W-9 form and send it to
 Contact Us:
 ----------------------------------
 For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
-
