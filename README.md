@@ -1,9 +1,9 @@
 AdColony SDK 3 Unity Plugin
 ============================================
-Modified: November 4, 2016  
-Unity Plug-in Version: 3.0.0  
-iOS SDK Version: 3.0.4  
-Android SDK Version: 3.0.4
+Modified: December 12, 2016  
+Unity Plug-in Version: 3.0.6  
+iOS SDK Version: 3.0.6  
+Android SDK Version: 3.0.6
 
 Download:
 ---------------------------------------
@@ -30,6 +30,10 @@ Questions?  E-mail us at support@adcolony.com
 For detailed information about the AdColony Aurora SDK, review our [iOS documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) and [Android documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
 *All* users should review our [Unity plugin documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki).
+
+3.0.6 Change Log:
+----------------------------------
+* Updated the Unity SDK packsge to use iOS and Android SDK 3.0.6.
 
 3.0.0 Change Log:
 ----------------------------------
