@@ -1,51 +1,70 @@
-AdColony SDK 3 Unity Plugin
-============================================
-Modified: December 16, 2016  
-Unity Plug-in Version: 3.0.6  
-iOS SDK Version: 3.0.6  
-Android SDK Version: 3.0.6
+# AdColony SDK Unity Plugin
+- Modified: April 7, 2017
+- Unity Plugin Version: 3.1.0
+- iOS SDK Version: 3.1.1
+- Android SDK Version: 3.1.2
 
-Download:
----------------------------------------
-The simplest way to obtain the AdColony SDK 3 Unity Plugin is to click the "Clone or download" button located on the upper, right-hand side of the Github repository page.
+## Overview
+Increase your revenue with the advertising SDK trusted by the world’s top publishers. AdColony delivers high-definition Instant-Play™ video ads that can be displayed anywhere within your application. AdColony contains V4VC™, a secure system for rewarding users of your app with virtual currency upon the completion of video plays.
 
-Contains:
----------------------------------------
-* AdColony.unitypackage
-* Unity Sample App
+The AdColony SDK Unity Plugin combines the native iOS and Android SDKs into an easy to use package for Unity applications.
 
-Getting Started with AdColony Unity:
----------------------------------------
-This Unity plugin integrates our Aurora SDK into a package that can be included in Unity 3D applications, and includes the latest versions of both our iOS and Android Aurora SDKs.
+For detailed information about the AdColony SDK, see our [Unity Plugin documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki), [iOS SDK documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki), or [Android SDK documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
 
-Our Aurora SDK contains huge leaps forward in our capabilities, with benefits for both publishers and advertisers. We would also like to highlight the addition of AdColony Compass™ to our suite of products. AdColony Compass provides publishers with intuitive marketing tools to maximize the value of users throughout your app economy, like creating rewards, achievements, push notifications and in-app messaging.
+**Note:** The AdColony Compass™ early access program has ended, and we are no longer accepting new partners. Publishers who are currently using those services should email compass@adcolony.com for more details.
 
+## Usage
+
+### Installation
+
+1. In the Unity Editor, select "Assets"->"Import Package"->"Custom Package". Navigate to the location of the AdColony SDK Unity Plugin and select "AdColony.unitypackage".
+1. Select "Import" to import all the assets into your project.
+1. The AdColony SDK Unity Plugin includes Google's PlayServicesResolver to automatically pull in necessary Google Play Services libraries. If there are conflicts with this, the `play-services-ads` library is the only required. You can choose to ignore this PlayServicesResolver installation, remove the `AdColony/Editor/ADCDependencies.cs` file, and include the `play-services-ads` in another way.
+1. The Plugins/Android/AdColony/AndroidManifest.xml file is automatically generated. To update manually, select "Tools"->"AdColony"->"Update AndroidManifest.xml".
+
+#### Updating from 3.0.x:
+In order to support thin/fat Android builds, we moved the native .so files from the `Plugins/Android/AdColony/libs` folder to the `Plugins/Android/libs` folder. Removing the `Plugins/Android/AdColony` folder before importing AdColony SDK Unity Plugin 3.1.0 is recommended. Otherwise, simply remove the `Plugins/Android/AdColony/libs/armeabi-v7a` and `Plugins/Android/AdColony/libs/x86` folders.
+
+#### Updating from 2.x:
 Please note that updating from our 2.x Unity Plugin is not a drag and drop update, but rather includes breaking API and process changes. In order to take advantage of the 3.x Unity Plugin, a complete re-integration is necessary. Please review our [documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki) to get a better idea on what changes will be necessary in your app.
 
-AdColony Compass™ provides the tools to increase user engagement through targeted user communications, achievements and rewards. Combined with AdColony’s award-winning Instant-Play™ HD video ads, Compass™ features can also stimulate monetization within apps.Compass™ tools allow publishers to incentivize desired user behaviors and improve KPI's for apps without heavy development work or altering carefully balanced in-app economies.
 
-To start using Compass™ today, follow this [link.](https://clients.adcolony.com/compass/info)
-Questions?  E-mail us at support@adcolony.com
+### Quick Start
+The basics of using the AdColony SDK to serve ads to your users are:
+1. Configure the service
+1. Request an ad *(We recommend requesting a new ad when an ad expires)*
+1. Show the ad
 
-For detailed information about the AdColony Aurora SDK, review our [iOS documentation](https://github.com/AdColony/AdColony-iOS-SDK-3/wiki) and [Android documentation](https://github.com/AdColony/AdColony-Android-SDK-3/wiki).
+For example:
 
-*All* users should review our [Unity plugin documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki).
+```csharp
 
-3.0.6 Change Log:
-----------------------------------
-* Updated the Unity SDK package to use iOS and Android SDK 3.0.6.
+AdColony.InterstitialAd _ad = null;
 
-3.0.0 Change Log:
-----------------------------------
-* Initial upload of the Unity plugin and sample app.
+void ConfigureAds() {
+    AdColony.Ads.Configure("app_id", null, "zone_id_1", "zone_id_2");
+    AdColony.Ads.OnRequestInterstitial += (AdColony.InterstitialAd ad) => {
+        _ad = ad;
+    };
+}
 
-Legal Requirements:
-----------------------------------
+void RequestAd() {
+    AdColony.Ads.RequestInterstitialAd("zone_id_1", null);
+}
+
+void PlayAd() {
+    if (_ad != null) {
+        AdColony.Ads.ShowAd(_ad);
+    }
+}
+```
+
+For detailed information about the AdColony SDK, see our [Unity Plugin documentation](https://github.com/AdColony/AdColony-Unity-SDK-3/wiki).
+
+## Legal Requirements
 By downloading the AdColony SDK, you are granted a limited, non-commercial license to use and review the SDK solely for evaluation purposes.  If you wish to integrate the SDK into any commercial applications, you must register an account with AdColony and accept the terms and conditions on the AdColony website.
 
 Note that U.S. based companies will need to complete the W-9 form and send it to us before publisher payments can be issued.
 
-
-Contact Us:
-----------------------------------
+## Contact Us
 For more information, please visit AdColony.com. For questions or assistance, please email us at support@adcolony.com.
