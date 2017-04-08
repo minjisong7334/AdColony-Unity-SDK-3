@@ -4,7 +4,7 @@ using System.Collections;
 public class Constants : MonoBehaviour {
 
 	// AdColony App ID and Zone IDs.
-#if UNITY_IPHONE
+#if UNITY_IOS
 	public static string AppID = "appbdee68ae27024084bb334a";
 	public static string InterstitialZoneID = "vzf8fb4670a60e4a139d01b5";
 	public static string CurrencyZoneID = "vzf8e4e97704c4445c87504e";

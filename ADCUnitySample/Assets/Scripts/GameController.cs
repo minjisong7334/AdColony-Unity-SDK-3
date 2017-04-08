@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class GameController : MonoBehaviour
-{
+{	
 	Asteroid asteroidConfigure;
 	Asteroid asteroidRequest;
 	Asteroid asteroidPlay;
@@ -102,7 +102,7 @@ public class GameController : MonoBehaviour
 
 	void Update() {
 		if (currencyPopupTimer > 0.0f) {
-			// This is a temporary hack to make sure we can re-show the request asteroid
+			// This is a temporary hack to make sure we can re-show the request asteroid 
 			// if we are playing a currency ad and the user click "NO" on the popup dialog.
 			currencyPopupTimer -= Time.deltaTime;
 			if (currencyPopupTimer <= 0.0f) {
