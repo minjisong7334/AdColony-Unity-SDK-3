@@ -1,8 +1,13 @@
+# Modified Not
+- AdColony Unity Plugin is containing Android SDK 3.1.2 but Android SDK 3.1.0 is more stable than 3.1.2.
+- Removed the file "ADCDependencies.cs" which is located in Assets>AdColony>Editor so If you need that file please copy from the AdColony-Unity-SDK-3 github(https://github.com/AdColony/AdColony-Unity-SDK-3).
+
+
 # AdColony SDK Unity Plugin
 - Modified: April 7, 2017
 - Unity Plugin Version: 3.1.0
 - iOS SDK Version: 3.1.1
-- Android SDK Version: 3.1.2
+- Android SDK Version: 3.1.0
 
 ## Overview
 Increase your revenue with the advertising SDK trusted by the world’s top publishers. AdColony delivers high-definition Instant-Play™ video ads that can be displayed anywhere within your application. AdColony contains V4VC™, a secure system for rewarding users of your app with virtual currency upon the completion of video plays.
