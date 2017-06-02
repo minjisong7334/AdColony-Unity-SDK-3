@@ -1,6 +1,7 @@
 # Change log
 - AdColony Unity Plugin is containing Android SDK 3.1.2 but Android SDK 3.1.0 is more stable than 3.1.2.
 - Removed the file "ADCDependencies.cs" which is located in Assets>AdColony>Editor so If you need that file please copy from the AdColony-Unity-SDK-3 github(https://github.com/AdColony/AdColony-Unity-SDK-3).
+- If you want to moidfy on your own instead of downloading files from here, simple replace the AdColony.jar and armeabi-v7a, x86 lib files which is in your Unity project to Android SDK 3.1.0's(https://github.com/AdColony/AdColony-Android-SDK-3/tree/9463e644eb4cbc26b6467b16b87baa7fef307100) jar and lib files. 
 
 
 # AdColony SDK Unity Plugin
